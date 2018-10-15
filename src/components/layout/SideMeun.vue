@@ -27,7 +27,7 @@
             <el-menu-item index="/e6">
                 <i class="el-icon-mobile-phone"></i>
                 <span slot="title">设备六</span>
-            </el-menu-item> 
+            </el-menu-item>
       </el-menu>
     </div>
 </template>

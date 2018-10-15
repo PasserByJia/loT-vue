@@ -82,8 +82,8 @@ export default {
                     name: '业务指标',
                     type: 'gauge',
                     min: 0,
-                    max: 60,
-                    splitNumber: 6,
+                    max: 1000,
+                    splitNumber: 10,
                    // radius: [0, 0],
                     detail: {formatter:'{value}度'},
                     data: [{value: this.temperature4, name: '气温'}]
