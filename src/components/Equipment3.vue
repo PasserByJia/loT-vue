@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     timer: function () {
-        this.$axios.get("/lot/getData?id=3").then(function (response) {
+        this.$axios.get("/getData?id=3").then(function (response) {
             if (response.status === 200) {
                 this.temperature = response.data.temperature;//temperature
                 this.humidity = response.data.humidity;
