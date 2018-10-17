@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     timer: function () {
-        this.$axios.get("/getData?id=5").then(function (response) {
+        this.$axios.get("/lot/getData?id=5").then(function (response) {
             if (response.status === 200) {
                 this.temperature5 = response.data.temperature;//temperature
                 this.humidity5 = response.data.humidity;
@@ -148,7 +148,7 @@ export default {
                     name: '业务指标',
                     type: 'gauge',
                     min: 0,
-                    max: 1000,
+                    max: 5000,
                     splitNumber: 10,
                    // radius: [0, 0],
                     detail: {formatter:'{value}g'},

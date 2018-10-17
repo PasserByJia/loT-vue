@@ -11,13 +11,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/': {
-        target: 'http://localhost:8081',  //后台服务器地址
+      '/lot': {
+        target: 'http://localhost:8081/',  //后台服务器地址
         changeOrigin: true,
         pathRewrite: {
-          '^/': ''
+         '^/lot': '/lot'
         }
       }
+      
     },
 
     // Various Dev Server settings
@@ -51,7 +52,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps

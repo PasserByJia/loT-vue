@@ -12,6 +12,7 @@ import axios from 'axios';
 
 Vue.prototype.$axios = axios
 Vue.prototype.$echarts = echarts 
+Vue.prototype.baseURL = process.env.API_ROOT;
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
